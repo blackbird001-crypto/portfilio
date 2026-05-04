@@ -310,13 +310,24 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; line-height: 1.2; }
 @media (max-width: 900px) {
     .details-grid { grid-template-columns: 1fr; }
     .card-content { padding: 2.5rem; }
+    .header-nav { display: none; }
+    .nav-profile-btn span { display: none; }
+    .nav-profile-btn { padding: 8px 12px; }
 }
 @media (max-width: 600px) {
-    .spatial-container { padding-top: 15vh; }
-    .title { font-size: 2.5rem; }
-    .action-group { flex-direction: column; }
+    .spatial-container { padding: 12vh 1rem 5vh; }
+    .title { font-size: 2.2rem; letter-spacing: -0.5px; }
+    .subtitle { font-size: 1.1rem; margin-bottom: 1.5rem; }
+    .description { font-size: 1rem; margin-bottom: 2rem; }
+    .action-group { flex-direction: column; gap: 1rem; }
     .btn { width: 100%; justify-content: center; }
-    .card-content { padding: 2rem; }
-    .footer-content { flex-direction: column; gap: 1.5rem; }
+    .card-content { padding: 1.5rem; }
+    .p-compact { padding: 1.5rem; }
+    .header-glass { padding: 0.8rem 1.2rem; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .section-label { font-size: 1rem; margin: 3rem 0 1rem; }
+    .card-title { font-size: 1.5rem; }
+    .footer-content { flex-direction: column; gap: 1.5rem; padding: 1.5rem; }
+    .contact-modal { width: 95%; }
     .cursor, .cursor-trail-container { display: none; } body { cursor: auto; }
 }

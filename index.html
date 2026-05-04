@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijaya Sarwesvaran | Spatial UI</title>
+    <title>Vijaya Sarwesvaran D | Spatial UI</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,14 @@
     <!-- Premium UI Header -->
     <header class="premium-header spatial-card">
         <div class="header-glass flex-between">
-            <div class="logo font-display">VS<span class="accent-cyan">.</span></div>
+            <div class="logo font-display">VD<span class="accent-cyan">.</span></div>
+
+            <nav class="header-nav font-body text-sm">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#" class="nav-link" id="navContactBtn">Contact</a>
+            </nav>
+
             <a href="https://github.com/blackbird001-crypto" target="_blank" class="nav-profile-btn">
                 <i class="fab fa-github"></i> <span class="font-body text-sm">blackbird001-crypto</span>
             </a>
@@ -58,18 +65,20 @@
                         <div class="card-content">
                             <span class="badge font-body accent-cyan"><i class="fas fa-circle pulse-dot"></i> OPEN FOR
                                 OPPORTUNITIES</span>
-                            <h1 class="title font-display gradient-text-1">Vijaya Sarwesvaran</h1>
+                            <h1 class="title font-display gradient-text-1">Vijaya Sarwesvaran D</h1>
                             <h2 class="subtitle font-body text-muted">Structural Engineer <span
                                     class="accent-pink">×</span> Digital Architect</h2>
 
                             <p class="description font-body text-muted">
-                                Recent Class 12 Graduate from Point Calimere International School. My obsession lies at the
+                                Recent Class 12 Graduate from Point Calimere International School. My obsession lies at
+                                the
                                 intersection of physical infrastructure and digital reality. I don't just write code; I
                                 engineer vibrant, unbreakable structures.
                             </p>
 
                             <div class="action-group">
-                                <button id="openContactBtn" class="btn primary-btn font-body" style="border: none; outline: none; font-family: inherit;">Initiate Contact <i class="fas fa-arrow-right"></i></button>
+                                <a href="#" id="openContactBtn" class="btn primary-btn font-body">Initiate Contact <i
+                                        class="fas fa-arrow-right"></i></a>
                                 <a href="https://www.linkedin.com/in/vijayasarwesvaran" target="_blank"
                                     class="btn secondary-btn font-body"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                             </div>
@@ -94,7 +103,7 @@
                 </section>
 
                 <!-- Digital Innovations (Projects) Grid -->
-                <h2 class="font-display section-label">DIGITAL INNOVATIONS</h2>
+                <h2 id="projects" class="font-display section-label">DIGITAL INNOVATIONS</h2>
                 <div class="projects-grid">
 
                     <!-- Project 1 -->
@@ -160,14 +169,15 @@
                                     <span class="timeline-date font-body accent-pink">CLASS 12 GRADUATE (CBSE) | 2013 -
                                         2026</span>
                                     <p class="font-body text-muted mt-2">Mastered the laws of physics, mathematics, and
-                                        structural logic, laying the foundation to build the infrastructure of tomorrow.</p>
+                                        structural logic, laying the foundation to build the infrastructure of tomorrow.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <!-- Technical Arsenal Card -->
-                    <section class="spatial-card skills-card">
+                    <section id="skills" class="spatial-card skills-card">
                         <div class="card-glass">
                             <div class="card-content">
                                 <div class="card-header">
@@ -204,8 +214,10 @@
                         <div class="card-content footer-content font-body text-muted">
                             <p>© 2026 VIJAYA SARWESVARAN</p>
                             <div class="flex-center gap-1">
-                                <a href="https://github.com/blackbird001-crypto" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/vijayasarwesvaran" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/blackbird001-crypto" target="_blank" class="social-icon"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/vijayasarwesvaran" target="_blank"
+                                    class="social-icon"><i class="fab fa-linkedin"></i></a>
                             </div>
                             <p class="accent-cyan"><i class="fas fa-circle pulse-dot"></i> SYSTEM ACTIVE</p>
                         </div>
@@ -218,33 +230,38 @@
 
     <!-- Contact Modal -->
     <div class="contact-modal-overlay" id="contactModal">
-        <div class="spatial-card contact-modal" style="opacity: 1; transform: translateY(0);">
+        <div class="contact-modal">
             <div class="card-glass p-compact">
                 <button class="close-modal-btn" id="closeContactBtn"><i class="fas fa-times"></i></button>
                 <div class="card-header mb-1">
                     <div class="icon-box gradient-bg-1"><i class="fas fa-paper-plane"></i></div>
                     <h3 class="card-title font-display">Get in Touch</h3>
                 </div>
-                <p class="font-body text-muted text-sm" style="margin-bottom: 2rem;">Initiate a direct uplink. I'm currently open for new opportunities and collaborations.</p>
-                
+                <p class="font-body text-muted text-sm" style="margin-bottom: 2rem;">Initiate a direct uplink. I'm
+                    currently open for new opportunities and collaborations.</p>
+
                 <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                     <!-- WEB3FORMS INTEGRATION -->
-                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
-                    
+                    <input type="hidden" name="access_key" value="2b8f916e-293e-4919-aaf6-9fb97c5ca0dd">
+
                     <div class="input-group">
                         <label class="font-body text-sm text-muted">IDENTIFIER (NAME)</label>
-                        <input type="text" class="glass-input font-body" name="name" required placeholder="Enter your name">
+                        <input type="text" class="glass-input font-body" name="name" required
+                            placeholder="Enter your name">
                     </div>
                     <div class="input-group">
                         <label class="font-body text-sm text-muted">RETURN ADDRESS (EMAIL)</label>
-                        <input type="email" class="glass-input font-body" name="email" required placeholder="Enter your email">
+                        <input type="email" class="glass-input font-body" name="email" required
+                            placeholder="Enter your email">
                     </div>
                     <div class="input-group">
                         <label class="font-body text-sm text-muted">TRANSMISSION (MESSAGE)</label>
-                        <textarea class="glass-input font-body" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+                        <textarea class="glass-input font-body" name="message" rows="4" required
+                            placeholder="Type your message here..."></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn primary-btn w-100 font-body" style="justify-content: center; margin-top: 1rem; border: none; outline: none; font-family: inherit; cursor: none;">
+
+                    <button type="submit" class="btn primary-btn w-100 font-body"
+                        style="justify-content: center; margin-top: 1rem; border: none; outline: none; font-family: inherit; cursor: none;">
                         SEND TRANSMISSION <i class="fas fa-satellite-dish"></i>
                     </button>
                 </form>

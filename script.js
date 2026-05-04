@@ -53,6 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
         lenis.on('scroll', ScrollTrigger.update);
         gsap.ticker.add((time) => lenis.raf(time * 1000));
         gsap.ticker.lagSmoothing(0);
+
+        // Intercept anchor links for Lenis Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId !== "#" && targetId !== "#projects" && targetId !== "#skills") return;
+                
+                if (targetId === "#projects" || targetId === "#skills") {
+                    e.preventDefault();
+                    lenis.scrollTo(targetId, { offset: -100 });
+                }
+            });
+        });
     }
 
     /* ==========================================================================
@@ -259,16 +272,20 @@ document.addEventListener("DOMContentLoaded", () => {
        6. CONTACT MODAL LOGIC
        ========================================================================== */
     const openBtn = document.getElementById('openContactBtn');
+    const navContactBtn = document.getElementById('navContactBtn');
     const closeBtn = document.getElementById('closeContactBtn');
     const modal = document.getElementById('contactModal');
 
-    if (openBtn && closeBtn && modal) {
-        openBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.add('active');
-            if(cursor) cursor.classList.remove('active');
-        });
-        
+    function openModal(e) {
+        if(e) e.preventDefault();
+        if(modal) modal.classList.add('active');
+        if(cursor) cursor.classList.remove('active');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (navContactBtn) navContactBtn.addEventListener('click', openModal);
+
+    if (closeBtn && modal) {
         closeBtn.addEventListener('click', () => {
             modal.classList.remove('active');
         });

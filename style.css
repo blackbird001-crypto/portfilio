@@ -193,6 +193,12 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; line-height: 1.2; }
 /* ==========================================================================
    HERO CARD
    ========================================================================== */
+.hero-layout { display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap-reverse; }
+.hero-text { flex: 1; min-width: 300px; }
+.hero-image { display: flex; justify-content: center; align-items: center; }
+.profile-img { width: 280px; height: 400px; border-radius: 30px; object-fit: cover; object-position: center bottom; border: 3px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 40px rgba(0, 229, 255, 0.2), inset 0 0 20px rgba(255, 0, 85, 0.2); transition: transform 0.5s ease, box-shadow 0.5s ease; filter: brightness(0.9) contrast(1.1); }
+.profile-img:hover { transform: scale(1.05); box-shadow: 0 0 60px rgba(0, 229, 255, 0.4), inset 0 0 30px rgba(255, 0, 85, 0.4); border-color: var(--accent-cyan); filter: brightness(1) contrast(1.1); }
+
 .badge { display: inline-block; padding: 6px 16px; background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.2); border-radius: 100px; font-size: 0.8rem; letter-spacing: 1px; font-weight: 600; margin-bottom: 2rem; }
 .pulse-dot { animation: pulse 2s infinite; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }

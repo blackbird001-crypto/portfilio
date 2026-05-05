@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; line-height: 1.2; }
 
 .spatial-container {
     max-width: 1200px; margin: 0 auto;
-    padding: 15vh 5vw 5vh; display: flex; flex-direction: column; gap: 2rem;
+    padding: calc(120px + 5vh) 5vw 5vh; display: flex; flex-direction: column; gap: 2rem;
 }
 
 .spatial-card {
@@ -321,7 +321,9 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; line-height: 1.2; }
     .nav-profile-btn { padding: 8px 12px; }
 }
 @media (max-width: 600px) {
-    .spatial-container { padding: 12vh 1rem 5vh; }
+    .spatial-container { padding: calc(100px + 5vh) 1rem 5vh; }
+    .hero-layout { flex-direction: column-reverse; text-align: center; gap: 2rem; }
+    .hero-image { margin-bottom: 1rem; }
     .title { font-size: 2.2rem; letter-spacing: -0.5px; }
     .subtitle { font-size: 1.1rem; margin-bottom: 1.5rem; }
     .description { font-size: 1rem; margin-bottom: 2rem; }
